@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(242, 4, 4);
+
+}
+nav{
+    background: #ffffff00;
+    width: 100%;
+    overflow: auto;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li{
+    float: right;
+    
+}
+nav a{
+    width: 100px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #ffffff;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding: 10px 9px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav a:hover{
+    color: white;
+    background: rgb(255, 0, 0)
+}
+#box1{
+    background-image: url(back.jpg);
+    height: 460px;
+    width: 1000px;
+    padding: 30px;
+    border: 10px;
+    border-radius: 10px;
+    margin-top: 75px;
+    margin-left: 170px;
+
+}
+h2{
+    color: rgb(102, 11, 11);
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 40px;
+    padding-left: 30px;
+}
+h1{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+h4{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 0px;
+    padding-left: 30px;
+}
+h3{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+#p1{
+    padding-top: 18px;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-left: 30px;
+}
+#p2{
+    padding-top: 6px;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-left: 30px;
+}
+#p3{
+    padding-top: 6px;
+    font-weight: lighter;
+    font-size: 15px;
+    padding-left: 30px;
+}
+
+#box1 .btn-box {
+    width: 345px;
+    height: 50px;
+    transform: translate(10px,60px);
+}
+
+.btn-box a { 
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(255, 0, 0);
+    border: 2px solid rgb(128, 3, 3);
+    border-radius: 8px;
+    font-size: 19px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: ease;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.btn-box a:hover{
+    color: red;
+}
+
+.btn-box a:nth-child(2){
+    background: transparent;
+    color: red;
+    
+}
+.btn-box a:nth-child(2):hover{
+    color:rgb(71, 7, 7);
+}
+.btn-box a:nth-child(2)::before{
+    background: red;
+}
+
+.btn-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(71, 7, 7);
+    z-index: -1;
+    transition: .9s;
+}
+.btn-box a:hover:before{
+    width: 100%;
+}
+h5{
+    font-size: 19px;
+    padding-top: 30px;
+    padding-right: 30px;
+    font-weight: bolder;
+    text-align: right;
+    color: rgb(247, 5, 5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
